@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction - Tailwind CSS</title>
+</head>
+<body>
+    <div class="preloader" id="preloader"></div>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+          <div class="logo"><img src="boy.jpg" alt="logo" /></div>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/course.html">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <div class="rightnav v-class">
+          <input type="text" name="search" id="search" onchange="openPage()" />
+          <button class="s-btn btn-sm" id="btn">Search</button>
+        </div>
+      </nav>
+    <div class="sect">
+        <div class="if">
+    <div class="iff">
+        <iframe title="YouTube Video" src="https://www.youtube.com/embed/p0Q8SQSCoZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="ww"></iframe>
+    </div>
+</div>
+    <div class="www">
+        <div id="panels"><div class="lg:w-2/3 mx-4 lg:mx-8 my-2 min-h-screen"><h1 class="text-2xl my-4 lg:text-3xl flex font-semibold">Our First Tailwind CSS Website: Tailwind Tutorial #2</h1><div class="cont font-karla text-lg"><p><span style="font-weight: 400;">In this tutorial, you will understand how to create your website with the help of Tailwind CSS. You can check out the previous tutorial to acquire a basic understanding of tailwind CSS by clicking </span><a href="https://www.youtube.com/watch?v=L4_jarMnB0c" target="_blank" rel="noopener"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">. Let’s get started with the tutorial!</span></p>
+            <h2>Creating a Landing page</h2>
+            <p><span style="font-weight: 400;">A landing page is a standalone page on a website designed to enable a specific action. The steps to create a landing page with the help of Tailwind CSS are mentioned below:-</span></p>
+            <ol>
+            <li style="font-weight: 400;" aria-level="1"><strong>Have a Reference:-</strong><span style="font-weight: 400;"> First of all, You have to surf through google to draw inspiration from the designs of other landing pages.&nbsp;</span></li>
+            <li style="font-weight: 400;" aria-level="1"><strong>Create an HTML file:</strong><span style="font-weight: 400;"><strong>-</strong> After having the reference, Create an HTML file( for example- a landing.html file) and jot down the title and description of your landing page. In the below example, the title has been set as “Best Used Phones in Lucknow- Grab the deal now”.</span></li>
+            <li style="font-weight: 400;" aria-level="1"><strong>Add Tailwind CDN:-</strong><span style="font-weight: 400;"> To begin using Tailwind CSS in your HTML file, you have to add the script of Tailwind CDN inside the &lt;head&gt; tag.</span></li>
+            </ol>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-2/b9dfc28d4746c5085e03b40902175491.webp" alt="" width="761" height="141"></p>
+            <p><strong>Figure 1.1: Creating a Landing Page</strong></p>
+            <p><span style="font-weight: 400;">&nbsp;</span></p>
+            <h2>Creating the Navbar</h2>
+            <p><span style="font-weight: 400;">Eventually, to create a navbar, you have to define the &lt;nav&gt; tag inside the body section of the landing.html. After that, You can add the list items like ‘Home’, ‘Contact Us’, ‘About’ and ‘Catalogue’ with the help of &lt;li tag&gt; in the form of an unordered list. As a result, the defined items will be shown in the Navigation bar.</span></p>
+            <h2>Enhancing the Navbar</h2>
+            <p><span style="font-weight: 400;">Furthermore, you have to use the flex property in the parent container to lay the collection of list items in one horizontal direction.&nbsp;&nbsp;&nbsp;</span></p>
+            <p><span style="font-weight: 400;">In addition to this, You can use the Tailwind Utility for controlling the space between child elements. Moreover, you can add a justify-end property to move all the items to the top right end. Lastly, You can add the desired background color to the navbar. Here’s the code and result of a navbar created by following the above procedure:</span></p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-2/81ebfb9c52fb3f31bd6baf2963af3766.webp" alt="" width="755" height="395"></p>
+            <p><strong>Figure 1.2: Creating the Navbar</strong></p>
+            <p>&nbsp;</p>
+            <h2>Adding Logo - In Navbar</h2>
+            <p><span style="font-weight: 400;">To add a logo in the navbar, you have to simply add the URL of your desired image in the "src" attribute. After that, You can enhance the position and size of your logo according to your need. For example:-</span></p>
+            <p>&nbsp;</p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-2/4e8c49c70c91265674d2cca726715473.webp" alt="" width="765" height="167"></p>
+            <p><strong>Figure 1.3: Adding Logo - In Navbar</strong></p>
+            <p>&nbsp;</p>
+            <p><strong>Explanation:-</strong><span style="font-weight: 400;"> In this case, the image has been properly aligned by setting the height as 12 and assigning the padding in the top and x-direction. Moreover, the image has been made rounded to give it an elegant look. You can also use the cursor pointer property to specify the type of cursor at a specific instance.</span></p>
+            <h2>Adding Title - In Navbar</h2>
+            <p><span style="font-weight: 400;">Alternatively, you can add a title to the navbar instead of adding the Logo. To add the title, You have to simply remove the image and add the title text inside the &lt;span&gt; tag. Additionally, you can enhance the text by using the margin, font bold, text colour and many more properties.</span></p>
+            <h2>Creating the Content Section</h2>
+            <p><span style="font-weight: 400;">To add the content section to your landing page, follow the steps mentioned below:-</span></p>
+            <ol>
+            <li style="font-weight: 400;" aria-level="1"><strong>Create a Container: </strong><span style="font-weight: 400;">You can create a new div container and assign the proper value of height and width to the created container.</span></li>
+            <li style="font-weight: 400;" aria-level="1"><strong>Add Background:</strong><span style="font-weight: 400;"> You can easily add the background colour of your choice to the div container.</span></li>
+            <li style="font-weight: 400;" aria-level="1"><strong>Add Heading/paragraph Text</strong><span style="font-weight: 400;">: You can add text to the content section by creating another div container and assigning the text size.</span></li>
+            <li style="font-weight: 400;" aria-level="1"><strong>Add buttons: </strong><span style="font-weight: 400;">To add the buttons, simply use the &lt;button&gt;&lt;/button&gt; tag and add the desired text and properties such as background colour, text colour, hover text, hover background, margin and so on.&nbsp;</span></li>
+            <li style="font-weight: 400;" aria-level="1"><strong>Adding a Picture: </strong><span style="font-weight: 400;">Eventually, You can add an image to the content section of the landing page with the help of the ‘Imgsrc’ attribute and flexbox. Moreover, to align the image properly, you can use the item-centre property of the flexbox.</span></li>
+            <li style="font-weight: 400;" aria-level="1"><strong>Add Padding:</strong><span style="font-weight: 400;"> Finally, you can add padding to each container with the help of the hit and trial method.</span></li>
+            </ol>
+            <p><span style="font-weight: 400;">&nbsp;</span></p>
+            <p><strong>Result:</strong><span style="font-weight: 400;"> Here’s the sample result of the landing page, created by following the above procedure. You can use it as a reference for understanding and assigning values.&nbsp;</span></p>
+            <p>&nbsp;</p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-2/487b098fe714feddb714b0a038dc7472.webp" alt="" width="752" height="213"></p>
+            <p><strong>Figure 1.4: Result</strong></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">In the upcoming tutorials, we will begin understanding Tailwind CSS from scratch to end. In addition to this, we will be covering a lot of new concepts of Tailwind by creating some astonishing projects.</span></p>
+            <p>&nbsp;</p>
+            <p><strong>Thank you for being with me throughout the tutorial. In the next tutorial we will be learning why use tailwind CSS? Till then Keep learning and Keep Coding.</strong></p></div></div><div class="flex mx-4 lg:mr-16 py-3 px-3 justify-between lg:w-2/3"><a href="/tail/tai3.html"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Previous </button></a><a href="/tail/tai1.html"></href><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Next </button></a></div></div>
+    </div>
+</body>
+</html>

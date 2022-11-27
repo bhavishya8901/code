@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="preloader" id="preloader"></div>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+          <div class="logo"><img src="boy.jpg" alt="logo" /></div>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/course.html">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <div class="rightnav v-class">
+          <input type="text" name="search" id="search" onchange="openPage()" />
+          <button class="s-btn btn-sm" id="btn">Search</button>
+        </div>
+      </nav>
+      <div class="sect">
+        <div class="if">
+    <div class="iff">
+        <iframe title="YouTube Video" src="https://www.youtube.com/embed/Baiqc3uba64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="ww"></iframe>
+    </div>
+</div>
+    <div class="www">
+        <div id="panels"><div class="lg:w-2/3 mx-4 lg:mx-8 my-2 min-h-screen"><h1 class="text-2xl my-4 lg:text-3xl flex font-semibold">Customizing Tailwind CSS using tailwind.config.js file: Tailwind Tutorial #12</h1><div class="cont font-karla text-lg"><p><span style="font-weight: 400;">In this article, you will get an absolute guide on how you can interpret the configure file of Tailwind CSS to add your custom property values. You can check out the process of setting up Tailwind CSS for production by clicking </span><a href="https://www.youtube.com/watch?v=aUunolbb1xU"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">. Let’s get started with this tutorial-</span></p>
+            <p>&nbsp;</p>
+            <p><strong>Tailwind Configuration</strong></p>
+            <p><span style="font-weight: 400;">One can use the ‘Tailwind Configuration’ feature to customize the Tailwind CSS according to his/her liking by simply manipulating the configure file of Tailwind CSS. This means that one can add custom values of margin, border, colour, screen breakpoints, colors, etc. Eventually, the Complete control of Tailwind CSS customization properties lies in your hands.&nbsp;</span></p>
+            <p>&nbsp;</p>
+            <p><strong>Scaffolding the default configuration</strong></p>
+            <p><span style="font-weight: 400;">You can add the complete configuration file, such that it comprises all the Tailwind’s default configuration, in your application by using the below command. In the below example, the name of the configuration file has been set to ‘confHarry’. However, you can swap it with the name you wish to provide to your configuration file.</span></p>
+            <div class="code-toolbar"><pre class="language-javascript" tabindex="0"><code class="language-javascript">npx tailwindcss init confHarry <span class="token operator">--</span>full</code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+            <p><strong>Result: </strong><span style="font-weight: 400;">After the execution of the above command, A ‘confHarry’ text file containing the entire default configuration of Tailwind CSS will be created. Let’s understand how one can use this file to customize their Tailwind Configuration.</span></p>
+            <p><span style="font-weight: 400;">&nbsp;</span></p>
+            <p><strong>Overview - ConfHarry File</strong></p>
+            <p><span style="font-weight: 400;">In the Theme section of the ‘confHarry’ file, a number of properties such as colors, screens, spacing, columns, etc have been provided. You might have noticed that some of the values are missing in the listings. For example, In the spacing section, a bunch of values with different CSS properties have been provided but the value 13 is missing as shown below-</span></p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-12/085cf975d44dd28154f1e04ace778834.webp" alt=""></p>
+            <p><strong>Figure 1.1: Overview:&nbsp; ConfHarry File</strong></p>
+            <p>&nbsp;</p>
+            <p><strong>Adding Custom Values</strong></p>
+            <p><span style="font-weight: 400;">Perhaps, one can wish to add some custom values with desired CSS properties. For example, In the above case, An individual might wish to add the ‘13’ value with the 3.25 rem CSS custom properties. You can do so as shown below-</span></p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-12/35130f599dc6a1c51495cd427274e5c4.webp" alt=""></p>
+            <p><strong>Figure1.2: Adding Custom spacing Values</strong></p>
+            <p>&nbsp;</p>
+            <p><strong>Explanation:</strong><span style="font-weight: 400;"> In the above example, The custom ‘13’ value with ‘3.5 rem’ CSS property is being added as a spacing object inside the ‘extend’ section of the theme. You can try out assigning the value ‘13’ for the margin in the x-direction of a div container by using the below code-</span></p>
+            <div class="code-toolbar"><pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span> “mx-13”</span><span class="token punctuation">&gt;</span></span> This is tera margin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+            <p><strong>Note:</strong><span style="font-weight: 400;"> While adding a custom value in the config file of Tailwind CSS, Make sure to provide the appropriate value after comparing it with the preceding and the succeeding value.</span></p>
+            <p>&nbsp;</p>
+            <p><strong>Adding Custom Font Size</strong></p>
+            <p><span style="font-weight: 400;">The default value of the font sizes utility class is between the range of 0.75 rem and 8 rem. However, You can easily create custom font sizes classes such as of 10 rem by following the below-mentioned steps-</span></p>
+            <p><span style="font-weight: 400;">1. First of all, You have to create a div container to add the utility classes. You can do so by copying the below piece of code-</span></p>
+            <div class="code-toolbar"><pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span> “mx-13</span> <span class="token attr-name">text-10xl”</span><span class="token punctuation">&gt;</span></span> This is tera margin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+            <p><span style="font-weight: 400;">2. After that, In the tailwindconfig.js file, you have to add the ‘font size’ with the custom value inside the extend section as shown below-</span></p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-12/dcab2c2ad5ab3aed72a038655cdcb0c9.webp" alt=""></p>
+            <p><strong>Figure 1.3: Adding Custom Font Size</strong></p>
+            <p><strong>Note:</strong><span style="font-weight: 400;"> You can put the font size directly in the Theme section to overwrite the default Classes.&nbsp;</span></p>
+            <p><strong>Result: </strong><span style="font-weight: 400;">Hence, The custom font size has been successfully added to the text as shown below-</span></p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-12/27a80cdd1506c44a3dc20b245e22f5e5.webp" alt=""></p>
+            <p><strong>Figure 1.4: Result: 10xl font size Added</strong></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">Similarly, Any value from the ‘confHarry’ file can be easily manipulated by using the above procedure. Thus, Tailwind CSS provides complete style customization authority to the developer. Always remember, that the created ‘confHarry’ file is used for your reference only and it isn’t used by the Tailwind at this instance.</span></p>
+            <p>&nbsp;</p>
+            <p><strong>Adding Custom Screen Breakpoints</strong></p>
+            <p><span style="font-weight: 400;">As we have discussed earlier, breakpoints </span><span style="font-weight: 400;">help you to add any utility class after a particular screen width.</span><span style="font-weight: 400;"> You can know more about the Tailwind Breakpoints by clicking </span><a href="https://www.youtube.com/watch?v=WGsiW_-2rZg"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">. By default, the sm, md, lg, xl and 2xl breakpoints are provided by Tailwind CSS. Suppose, You wish to create the xsm breakpoint of 500 px then this time you have to add it inside the theme section directly instead of adding it inside the extend section as shown below-&nbsp;</span></p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-12/6d5df782f8b5bf5056eb4fbb3e268c04.webp" alt=""></p>
+            <p><strong>Figure 1.5:</strong><span style="font-weight: 400;"> </span><strong>Adding Custom Screen Breakpoints</strong></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">Till now, we have added multiple custom values for different properties in the extend section. Now, to see it in action create a div container and add the xsm class as provided below-</span></p>
+            <div class="code-toolbar"><pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span> “xsm:bg-red-500</span> <span class="token attr-name"><span class="token namespace">md:</span>bg-purple-500</span> <span class="token attr-name">mx-4</span> <span class="token attr-name">bg-red-900</span> <span class="token attr-name">text-white”</span><span class="token punctuation">&gt;</span></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+            <p>&nbsp;</p>
+            <p><strong>Result:-</strong><span style="font-weight: 400;"> Hence, The custom screen breakpoint has been successfully added to the div container. Therefore, after crossing the 500px screen width the ‘xsm’ screen breakpoint gets enabled and provides the container with red colour as shown below. Moreover, on increasing the screen size after 768px the color of the container turns purple as ‘md’ breakpoint is assigned.</span></p>
+            <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-12/9a2cd246607e7682f9678b5176a5cba8.webp" alt=""></p>
+            <p><strong>Figure 1.6: Result- Adding the xsm Breakpoint</strong></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">In the upcoming videos, we will begin understanding some more astounding properties of Tailwind CSS. In addition to this, we will be covering a lot of new concepts of Tailwind by developing some mind-blowing projects.</span></p>
+            <p><span style="font-weight: 400;">Check out our Github to access the source code at this point in the course, &nbsp;<a href="https://github.com/CodeWithHarry/Master-Tailwind/tree/master/Tailwind%20Tutorial%2012" target="_blank" rel="noopener">Click Here</a></span></p>
+            <p><strong>Thank you for being with me throughout the tutorial. See you all in the next tutorial. Till then Keep learning and Keep Coding.</strong></p></div></div><div class="flex mx-4 lg:mr-16 py-3 px-3 justify-between lg:w-2/3"><a href="/tail/tai11.html"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Previous </button></a><a href="/tail/tai13.html"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Next </button></a></div></div>
+    </div>
+    <footer class="background">
+        <p class="text-footer">
+          Copyright &copy; 2027 www.iEducate.com - All rights reserved
+        </p>
+      </footer>  
+      <script src="script.js"></script>
+</body>
+</html>

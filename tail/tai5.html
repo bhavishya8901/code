@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+          <div class="logo"><img src="boy.jpg" alt="logo" /></div>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/course.html">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <div class="rightnav v-class">
+          <input type="text" name="search" id="search" onchange="openPage()" />
+          <button class="s-btn btn-sm" id="btn">Search</button>
+        </div>
+      </nav>
+      <div class="sect">
+        <div class="if">
+    <div class="iff">
+      <iframe title="YouTube Video" src="https://www.youtube.com/embed/OYdkBxbJFks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="ww"></iframe>
+    </div>
+</div>
+    <div class="www">
+      <div id="panels"><div class="lg:w-2/3 mx-4 lg:mx-8 my-2 min-h-screen"><h1 class="text-2xl my-4 lg:text-3xl flex font-semibold">Margins, Borders &amp; Padding in Tailwind CSS : Tailwind Tutorial #5</h1><div class="cont font-karla text-lg"><p><span style="font-weight: 400;">In this article, you will get a complete guide on how to apply Margin, Border &amp; Padding in your application with the help of Tailwind CSS. You can check out the process of setting up Tailwind CSS for production by clicking </span><a href="https://www.youtube.com/watch?v=aUunolbb1xU" target="_blank" rel="noopener"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">. Let’s get started with the tutorial!</span></p>
+        <p>&nbsp;</p>
+        <h2><span style="font-size: 14pt;">Margin, Border and Padding Property</span></h2>
+        <p><span style="font-weight: 400;">Tailwind CSS comes up with a lot of classes to style the margin, padding and border of your components. Some of the most commonly used classes are mentioned below:</span></p>
+        <p>&nbsp;</p>
+        <p><strong>1. Margin Property:- </strong><span style="font-weight: 400;">The Margin property is used to specify the space around an element. Remember, The margin is entirely transparent and doesn't have any background color. The horizontal &amp; vertical margins of an element can be controlled with the help of ‘mx-{size}’ and ‘my-{size}’ classes respectively. In addition to this, You can use the ‘m-{size}’ class to control the margin on all sides of an element. Moreover, You can use the negative margin values to add the overlapping feature to an element. However, Using Negative margins is generally avoided as they might hamper the developer experience.&nbsp;</span></p>
+        <p>&nbsp;</p>
+        <p><strong>2. Space Between Property:</strong><span style="font-weight: 400;">-This property helps the user in controlling the space between the child elements by evenly distributing the items along the line. For example, You can provide the proper spacing between the elements of a Navbar by using the ‘space-x-{amount}’ utility as shown below. Similarly, You can control the spacing between elements in the y-direction by using the ‘space-y-{amount}’ utility.</span><strong>&nbsp;</strong></p>
+        <p>&nbsp;</p>
+        <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-5/81b7a011e959398c05d3801337aa66e6.webp" alt=""></p>
+        <p><strong>Figure 1.1: Applying Space between Property</strong></p>
+        <p>&nbsp;</p>
+        <p><strong>Note:- </strong><span style="font-weight: 400;">The ‘space-y-{amount}’ utility isn’t applied to the first class of the element. To overcome this, You can create an empty &lt;li&gt; tag as the first element</span><strong>.</strong></p>
+        <p>&nbsp;</p>
+        <p><strong>3. Border Radius:-</strong><span style="font-weight: 400;"> The border-radius property allows you to add rounded corners to an element by defining the radius of the element’s corners. In Tailwind CSS, the ‘rounded-sm’, ‘rounded’, ‘rounded-Ig’ or ’rounded-full’ utilities are used to apply different border-radius sizes to an element. These classes are generally used to create a quick elegant button for your application. You can use the Border Radius property in Tailwind CSS as shown below:</span></p>
+        <p>&nbsp;</p>
+        <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-5/adadf410a9f35f56270a290bfb3fdf00.webp" alt=""></p>
+        <p><strong>Figure 1.2: Applying Border Radius</strong></p>
+        <p>&nbsp;</p>
+        <p><strong>4. Border Width:- </strong><span style="font-weight: 400;">This property is used to set the width/thickness of the border of an element. In Tailwind CSS, the border, border-0, border-2, or border-8 utilities are used to set the border width for all sides of an element. Moreover, You can use the border-{side}, border-{side}-0, border-{side}-2, border-{side}-4, or border-{side}-8 utilities to set the border width for one side of an element. You can add the border-width property to an element by using Tailwind CSS as shown below:</span></p>
+        <p>&nbsp;</p>
+        <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-5/301fdbf5d947d68dff5530f870dff827.webp" alt=""></p>
+        <p><strong>Figure 1.3: Applying Border Width</strong></p>
+        <p>&nbsp;</p>
+        <p><strong>Note:</strong><span style="font-weight: 400;"> You can check out all the Margin, Border, and Padding utility classes by visiting the </span><a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noopener"><span style="font-weight: 400;">official website</span></a><span style="font-weight: 400;"> of Tailwind CSS.</span></p>
+        <p>&nbsp;</p>
+        <p><span style="font-weight: 400;">In the upcoming videos, we will begin understanding some other properties of Tailwind CSS. In addition to this, we will be covering a lot of new concepts of Tailwind by creating some mind-blowing projects.</span></p>
+        <p>&nbsp;</p>
+        <p><span style="font-weight: 400;">Check out our Github to access the source code at this point in the course, &nbsp;<a href="https://github.com/CodeWithHarry/Master-Tailwind/tree/master/Tailwind%20Tutorial%205" target="_blank" rel="noopener">Click Here</a></span></p>
+        <p>&nbsp;</p>
+        <p><strong>Thank you for being with me throughout the tutorial. In the next tutorial we will be learning about Square Bracket Notation in Tailwind CSS. Till then Keep learning and Keep Coding.</strong></p></div></div><div class="flex mx-4 lg:mr-16 py-3 px-3 justify-between lg:w-2/3"><a href="/tail/tai4.html"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Previous </button></a><a href="/tail/tai6.html"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Next </button></a></div></div>
+    </div>
+    <footer class="background">
+        <p class="text-footer">
+          Copyright &copy; 2027 www.iEducate.com - All rights reserved
+        </p>
+      </footer>  
+</body>
+</html>

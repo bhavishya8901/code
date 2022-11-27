@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+          <div class="logo"><img src="boy.jpg" alt="logo" /></div>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/course.html">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <div class="rightnav v-class">
+          <input type="text" name="search" id="search" onchange="openPage()" />
+          <button class="s-btn btn-sm" id="btn">Search</button>
+        </div>
+      </nav>
+      <div class="sect">
+        <div class="if">
+    <div class="iff">
+      <iframe title="YouTube Video" src="https://www.youtube.com/embed/MjQ5vzWvWXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="ww"></iframe>
+    </div>
+</div>
+    <div class="www">
+      <div id="panels"><div class="lg:w-2/3 mx-4 lg:mx-8 my-2 min-h-screen"><h1 class="text-2xl my-4 lg:text-3xl flex font-semibold">@layer Directive in Tailwind: Tailwind Tutorial #10</h1><div class="cont font-karla text-lg"><p><span style="font-weight: 400;">In this article, you will get a complete understanding of how to use the ‘Layer’ Directive in Tailwind CSS to enhance the developer experience. You can check out the process of setting up Tailwind CSS for production by clicking </span><a href="https://www.youtube.com/watch?v=aUunolbb1xU"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">. Let’s get started with the tutorial-</span></p>
+        <p>&nbsp;</p>
+        <p><strong>Creating Button - Using @apply directive</strong></p>
+        <p><span style="font-weight: 400;">To understand the layer directive in detail, Let’s use the button example as used in the previous video. You can easily create a button by copying the below piece of code-</span></p>
+        <div class="code-toolbar"><pre class="language-css" tabindex="0"><code class="language-css">&lt;button class= “text-blue-700 bg-red-600 rounded-xl px-4 py-1”&gt;Click Me &lt;/button&gt;</code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+        <p><span style="font-weight: 400;">As we have discussed in the previous video,</span><strong> </strong><span style="font-weight: 400;">the ‘@apply’ directive feature is used to apply a number of classes to an individual custom class. This means that after using the apply directive one can easily replace all the above utility classes with a custom class like ‘btn’ as shown below–</span></p>
+        <div class="code-toolbar"><pre class="language-css" tabindex="0"><code class="language-css">&lt;button class= “btn”&gt;Click Me &lt;/button&gt; </code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+        <p>&nbsp;</p>
+        <p><strong>Layer Directive</strong></p>
+        <p><span style="font-weight: 400;">You might know that there are three pre-existing layers in the tailwind CSS which are the base, components, and utilities. A very important point to be noted while creating a custom class using the ‘Apply’ directive is to maintain the order in which it is defined with respect to the base, component and utility layer. For example, In the below case, The ‘btn’ class will be rendered after the utility class-</span></p>
+        <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-10/6f8663362ff4430b3b03387edb45dfc6.webp" alt=""></p>
+        <p><strong>Figure 1.1: Layer Directive</strong></p>
+        <p>&nbsp;</p>
+        <p><strong>Using Layer directive</strong></p>
+        <p><span style="font-weight: 400;">Tailwind CSS provides a fascinating way of fixing this issue by providing the feature of Layer directive. The Layer directive allows you to create custom classes as a part of the three fundamental layers as shown below-</span></p>
+        <p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-10/f8c6759f3b84d4638fed98caa8d24da1.webp" alt=""></p>
+        <p><strong>Figure 1.2: Using Layer Directive</strong></p>
+        <p><span style="font-weight: 400;">As a result, the ‘btn’ class will be added at the end of the component layer. To check this, You can create another custom class such as ‘components after’ and compare the position of the two classes with respect to the component class. You will find that the ‘btn’ class has been rendered before the ‘components after’ class. Thus, the layer directive is used to put the custom class before or after a specific layer.</span></p>
+        <p>&nbsp;</p>
+        <p><span style="font-weight: 400;">In the upcoming videos, we will begin understanding some more amazing properties of Tailwind CSS. In addition to this, we will be covering a lot of new concepts of Tailwind by developing some mind-blowing projects.</span></p>
+        <p><span style="font-weight: 400;">Check out our Github to access the source code at this point in the course, &nbsp;<a href="https://github.com/CodeWithHarry/Master-Tailwind/tree/master/Tailwind%20Tutorial%2010" target="_blank" rel="noopener">Click Here</a></span></p>
+        <p><strong>Thank you for being with me throughout the tutorial. See you all in the next tutorial. Till then Keep learning and Keep Coding.</strong></p></div></div><div class="flex mx-4 lg:mr-16 py-3 px-3 justify-between lg:w-2/3"><a href="/tail/tai9.html"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Previous </button></a><a href="/tail/tai11.html"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Next </button></a></div></div>
+    </div>
+    <footer class="background">
+        <p class="text-footer">
+          Copyright &copy; 2027 www.iEducate.com - All rights reserved
+        </p>
+      </footer>  
+</body>
+</html>
